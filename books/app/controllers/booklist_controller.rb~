@@ -3,5 +3,6 @@ class BooklistController < ApplicationController
   end
 
   def bye
+    @msg = 'foo'
   end
 end

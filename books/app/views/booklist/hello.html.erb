@@ -2,3 +2,9 @@
 <p>
 テストさん。
 </p>
+
+<p>
+<% @titles.each do |title| %>
+[タイトル] <%= title.name %> [発売日] <%= title.sales_date %> <br />
+<% end %>
+</p>
