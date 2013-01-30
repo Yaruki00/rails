@@ -1,4 +1,12 @@
 Sample::Application.routes.draw do
+  get "plans/src1"
+
+  get "plans/src2"
+
+  get "plans/src3"
+
+  get "plans/dest"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
