@@ -20,4 +20,23 @@ class PlansController < ApplicationController
   def dest
     render :text => 'unko!', :layout => true, :status => 301
   end
+
+  def param1
+    render :text => "id1 = #{params[:id1]}, id2 = #{params[:id2]}"
+  end
+
+  def param2
+    render :text => "id1 = #{params[:id1]}, id2 = #{params[:id2]}"
+  end
+
+  def param3
+    test = params[:test]
+    render :text => "id1 = #{test['id1']}, id2 = #{test['id2']}"
+  end
+
+  def param4
+    id = params[:id]
+    render :text => "id1 = #{id[0]}, id2 = #{id[1]}"
+  end
+
 end
